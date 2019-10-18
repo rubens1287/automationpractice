@@ -23,7 +23,7 @@ mvn verify
 ```
 # VIDEO
 
-[![Watch the video](automation.jpg)](https://youtu.be/LcBMJyLSWbo)
+[![Watch the video](automation-video.jpg)](https://youtu.be/LcBMJyLSWbo)
 
 ## AUTORES
 
