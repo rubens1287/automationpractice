@@ -20,7 +20,7 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 mvn verify
 ```
 
-## EVIDÊNCIA
+## EVIDÊNCIAS
 
 Os arquivos com as evidências ficam localizados na pasta target do projeto, esta pasta só é criada depois da primeira execução.
 
