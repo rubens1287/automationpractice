@@ -1,4 +1,4 @@
-# AUTOMATION PRACTICE
+# SISTEMA - AUTOMATION PRACTICE
 
 Projeto desenvolvido como uma avaliação.
 
@@ -14,7 +14,7 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 *   Java 1.8 SDK
 *   Maven 3.5.*
 
-## EXECUTANDO OS TESTES
+## COMANDO PARA EXECUTAR OS TESTES
 
 ```
 mvn verify
