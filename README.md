@@ -13,6 +13,7 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 
 *   Java 1.8 SDK
 *   Maven 3.5.*
+*   Chrome qualquer versão
 
 ## COMANDO PARA EXECUTAR OS TESTES
 
@@ -32,7 +33,7 @@ Os arquivos com as evidências ficam localizados na pasta target do projeto, est
 
 ## LOG NO CONSOLE
 
-Veja os resultados do testes no console, com status dos teste e também a localização dos arquivos mencionados acima.
+Veja os resultados do testes no console com status e também a localização dos arquivos mencionados acima.
 
 <div align="center">
     <img id="header" src="./src/test/resources/images/resultado1.jpg" />
