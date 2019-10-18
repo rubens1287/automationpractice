@@ -22,7 +22,7 @@ mvn verify
 
 ## EVIDÊNCIA
 
-O arquivo com as evidencia ficam na pasta target do projeto, esta pasta só é criada depois da primeira execução.
+Os arquivos com as evidências ficam localizados na pasta target do projeto, esta pasta só é criada depois da primeira execução.
 
 ```
  Report HTML: [caminho da sua maquina]e2e-automation-practice-front-end\target\generated-report/index.html
