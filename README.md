@@ -1,7 +1,12 @@
-_README in English [here](README.en-us.md)_  
-# NOME-PROJETO-SISTEMA
+# AUTOMATION PRACTICE
 
-Aplique uma breve descrição do projeto que você está desenvolvendo e o que está sendo testado
+Projeto desenvolvido como uma avaliação.
+
+# TESTE
+
+*   Compra
+    * [CT001 - AP - Realizar uma compra com sucesso](feature/Compra.feature)
+
 
 
 ## PRÉ-REQUISITOS
@@ -10,24 +15,16 @@ Descreva os requisitos de software e hardware que é necessário para executar e
 
 *   Java 1.8 SDK
 *   Maven 3.5.*
-*   Node.js 8.*
-*   Appium install via node version last version
-*   WinAppDriver install via node version 1.1
 
 ## EXECUTANDO OS TESTES
 
 ```
-Explique passo a passo como executar os testes, caso exista uma forma de organização especial
-que foi desenvolvida atravês de tags do cucumber.
+mvn verify
 ```
+# VIDEO
 
-## EMPRESA DESENVOLVEDORA
-
-Coloque o nome da empresa ou parceiro que desenvolveu esta automação
+[![Watch the video](automation.jpg)](https://youtu.be/LcBMJyLSWbo)
 
 ## AUTORES
 
-* **Fulano 1**
-* **Fulano 2**
-* **Fulano 3**
-* **Fulano ...**
+* **Rubens Lobo**

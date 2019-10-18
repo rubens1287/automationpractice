@@ -2,13 +2,16 @@ package gherkin.stepdefinition.automationpractice;
 
 import br.com.pom.automationpractice.pages.Address;
 import br.com.pom.automationpractice.pages.Order;
+import br.com.pom.automationpractice.pages.Payment;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Quando;
+import io.cucumber.datatable.DataTable;
 
 public class OrdemSteps {
 
     private Order order = new Order();
     private Address address = new Address();
+
 
     @E("confirma endereco de recebimento")
     public void confirmaEnderecoDeRecebimento() {
@@ -20,12 +23,5 @@ public class OrdemSteps {
         order.confirmarTermoDoServico();
         order.confirmarOrdemServico();
     }
-
-    @Quando("seleciono o metodo de pagamento")
-    public void seleciono_o_metodo_de_pagamento() {
-
-    }
-
-
 
 }

@@ -90,7 +90,7 @@ public class Verifications {
     public static void verifyTextsElementClickable(WebDriver driver, By by, String expectedText, int seconds) {
         WebElement element = Action.getClickableElement(driver, by, seconds);
         int timeout = 0;
-        while (!(element.getText().trim().equals(expectedText)) && (timeout <= seconds)) {
+        while (!(element.getText().trim().contains(expectedText)) && (timeout <= seconds)) {
             Verifications.wait(1);
             if (timeout == seconds) {
                 fail("Element " + by.toString() + " not found on current page!");

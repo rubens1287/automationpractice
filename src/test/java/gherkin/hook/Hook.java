@@ -16,9 +16,7 @@ public class Hook extends ExtentReports {
         testScenario.set(scenario);
         AppWeb appWeb = new AppWeb();
         appWeb.setTestName(testScenario.get().getName());
-        appWeb.setBrowserName("chrome");
         appWeb.setUpDriver(appWeb);
-        loadApplication(getBrowser(),"http://automationpractice.com/index.php");
     }
 
     @After

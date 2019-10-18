@@ -38,27 +38,6 @@
 		</developer>
 	</developers>
 
-	<profiles>
-		<profile>
-			<id>sonar</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<!-- Optional URL to server. Default value is http://localhost:9000 -->
-				<sonar.login>
-					31e95fdd7e44dab3d8b478ca6842655e6c4276d8
-				</sonar.login>
-				<sonar.host.url>
-					http://qa-brazil-server.gft.com:9000
-				</sonar.host.url>
-				<sonar.projectKey>
-					qa-acelerador
-				</sonar.projectKey>
-			</properties>
-		</profile>
-	</profiles>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -139,113 +118,11 @@
 
 	<dependencies>
 
-
-		<!-- https://mvnrepository.com/artifact/br.eti.kinoshita/testlink-java-api -->
-		<dependency>
-			<groupId>br.eti.kinoshita</groupId>
-			<artifactId>testlink-java-api</artifactId>
-			<version>1.9.16-1</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-email</artifactId>
-			<version>1.5</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>com.github.rubens1287</groupId>
-			<artifactId>OSSRH-49857</artifactId>
-			<version>1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.epam.reportportal</groupId>
-			<artifactId>agent-java-cucumber4</artifactId>
-			<version>4.0.0</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.github.yunusmete.stf/openstf-java-client -->
-		<dependency>
-			<groupId>com.github.yunusmete.stf</groupId>
-			<artifactId>openstf-java-client</artifactId>
-			<version>1.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.17</version>
-		</dependency>
-
 		<!-- https://github.com/paul-hammant/ngWebDriver/blob/master/README.md  / utilizado para web app angular-->
 		<dependency>
 			<groupId>com.paulhammant</groupId>
 			<artifactId>ngwebdriver</artifactId>
 			<version>1.1.3</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
-		<dependency>
-			<groupId>org.sonarsource.scanner.maven</groupId>
-			<artifactId>sonar-maven-plugin</artifactId>
-			<version>3.2</version>
-		</dependency>
-
-		<!--Sikulli -->
-		<dependency>
-			<groupId>com.sikulix</groupId>
-			<artifactId>sikulixapi</artifactId>
-			<version>1.1.1</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.github.vidstige</groupId>
-					<artifactId>jadb</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<!-- OCR download language https://github.com/tesseract-ocr/tesseract/wiki/Data-Files-->
-		<dependency>
-			<groupId>net.sourceforge.tess4j</groupId>
-			<artifactId>tess4j</artifactId>
-			<version>4.0.2</version>
-		</dependency>
-
-
-		<!-- extentreports -->
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>3.1.5</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.2.2</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.11</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.2gis.winium/winium-webdriver -->
-		<dependency>
-			<groupId>com.github.2gis.winium</groupId>
-			<artifactId>winium-webdriver</artifactId>
-			<version>0.1.0-1</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.github.2gis.winium/winium-elements-desktop -->
-		<dependency>
-			<groupId>com.github.2gis.winium</groupId>
-			<artifactId>winium-elements-desktop</artifactId>
-			<version>0.2.0-1</version>
 		</dependency>
 
 		<!--Java Faker  https://github.com/DiUS/java-faker -->
@@ -253,13 +130,6 @@
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>0.16</version>
-		</dependency>
-
-		<!-- WinAppDriver para teste de windowsDriver -->
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>6.1.0</version>
 		</dependency>
 
 		<!-- Rest Assured para teste de Back-End -->
@@ -317,13 +187,6 @@
 			<version>3.3.9</version>
 		</dependency>
 
-		<!-- Manage file transfer protocol - SFTP Helper -->
-		<dependency>
-			<groupId>com.jcraft</groupId>
-			<artifactId>jsch</artifactId>
-			<version>0.1.54</version>
-		</dependency>
-
 		<dependency>
 			<groupId>commons-net</groupId>
 			<artifactId>commons-net</artifactId>
@@ -342,14 +205,6 @@
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>3.7.1</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-picocontainer</artifactId>
-			<version>4.2.6</version>
-			<scope>test</scope>
 		</dependency>
 
 	</dependencies>

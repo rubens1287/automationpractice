@@ -5,6 +5,9 @@ import org.openqa.selenium.By;
 
 import java.util.Locale;
 
+/**
+ * Classe para gerar dados sinteticos para o cadastro do cliente fake
+ */
 public class DadosCliente {
 
     private String primeiroNome;

@@ -13,5 +13,7 @@ Funcionalidade: Compra
      E confirma endereco de recebimento
      E aceita termo da Ordem de Servico
      E seleciono o metodo de pagamento
+     |METODO_PAGAMENTO|
+     |Pay by bank wire|
      E confirmo a compra
-    Entao valido se a compra foi realizda com sucesso
+    Entao valido se a compra foi realizada com sucesso

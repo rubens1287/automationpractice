@@ -10,7 +10,6 @@ public class Address extends DriverManager implements Constantes {
 
     private By btnProceedToCheckout = By.name("processAddress");
 
-
     /**
      * Valida se a pagina de Endereço foi apresentada
      */
@@ -19,6 +18,9 @@ public class Address extends DriverManager implements Constantes {
         ExtentReports.appendToReport(getBrowser());
     }
 
+    /**
+     * Clica no botão para confirma o endereço
+     */
     public void confirmarEndereco(){
         getBrowser().findElement(btnProceedToCheckout).click();
     }

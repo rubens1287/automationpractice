@@ -5,8 +5,6 @@ import br.com.core.report.ExtentReports;
 import br.com.core.setup.DriverManager;
 import br.com.core.view.Action;
 import br.com.pom.automationpractice.constantes.Constantes;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
 import io.cucumber.datatable.DataTable;
 import org.openqa.selenium.By;
 import org.testng.Assert;

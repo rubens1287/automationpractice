@@ -10,6 +10,7 @@ public class Order extends DriverManager implements Constantes {
 
     private By btnProceedToCheckout = By.linkText("Proceed to checkout");
     private By ckbAgreeTerms = By.id("cgv");
+    private By btnProcessCarrier = By.name("processCarrier");
 
     /**
      * Procede para criação da ordem de venda
@@ -21,15 +22,20 @@ public class Order extends DriverManager implements Constantes {
         getBrowser().findElement(btnProceedToCheckout).click();
     }
 
+    /**
+     *  Valida, tira print e confirma Termo de serviço
+     */
     public void confirmarTermoDoServico(){
-        Verifications.verifyElementIsClickable(getBrowser(),ckbAgreeTerms,timeOut);
+        Verifications.verifyElementExists(getBrowser(),ckbAgreeTerms,timeOut);
         ExtentReports.appendToReport(getBrowser());
         getBrowser().findElement(ckbAgreeTerms).click();
     }
 
+    /**
+     * Confirma ordem de serviço.
+     */
     public void confirmarOrdemServico(){
-        getBrowser().findElement(btnProceedToCheckout).click();
-        getBrowser().findElement(btnProceedToCheckout).click();
+        getBrowser().findElement(btnProcessCarrier).click();
     }
 
 
