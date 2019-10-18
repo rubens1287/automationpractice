@@ -40,7 +40,7 @@ Veja os resultados do testes no console, com status dos teste e também a locali
 
 ## VIDEO
 
-[![Watch the video](automation-video.jpg)](https://youtu.be/LcBMJyLSWbo)
+[![Watch the video](src/test/resources/images/automation-video.jpg)](https://youtu.be/LcBMJyLSWbo)
 
 ## AUTOR
 
