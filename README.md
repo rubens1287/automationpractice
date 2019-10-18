@@ -1,6 +1,6 @@
 # SISTEMA - AUTOMATION PRACTICE
 
-Projeto desenvolvido como uma avaliação.
+Projeto desenvolvido com proposito de uma avaliação.
 
 ## TESTE
 
