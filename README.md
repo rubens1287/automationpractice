@@ -26,7 +26,7 @@ git clone https://github.com/rubens1287/e2e-automation-practice-front-end.git
 
 ## COMANDO PARA EXECUTAR OS TESTES
 
-Dentro da pasta do projeto, onde esta localizado o arquivo pom.xml, execute o comando abaixo para rodar os testes automatizados.
+Com o git bash acesse a pasta do projeto, onde esta localizado o arquivo pom.xml, execute o comando abaixo para rodar os testes automatizados.
 
 ```
 mvn verify
