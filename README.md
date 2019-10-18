@@ -2,12 +2,10 @@
 
 Projeto desenvolvido como uma avaliação.
 
-# TESTE
+## TESTE
 
 *   Compra
     * [CT001 - AP - Realizar uma compra com sucesso](feature/Compra.feature)
-
-
 
 ## PRÉ-REQUISITOS
 
@@ -21,7 +19,7 @@ Descreva os requisitos de software e hardware que é necessário para executar e
 ```
 mvn verify
 ```
-# VIDEO
+## VIDEO
 
 [![Watch the video](automation-video.jpg)](https://youtu.be/LcBMJyLSWbo)
 
