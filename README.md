@@ -32,7 +32,7 @@ Os arquivos com as evidências ficam localizados na pasta target do projeto, est
 
 ## LOG NO CONSOLE
 
-Veja o resultado do teste no console, com as informações e localização dos arquivos mencionados acima.
+Veja o resultado do teste no console, com as informações e também a localização dos arquivos mencionados acima.
 
 <div align="center">
     <img id="header" src="resultado.jpg" />
