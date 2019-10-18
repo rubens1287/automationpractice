@@ -25,7 +25,7 @@ mvn verify
 O arquivo com as evidencia ficam na pasta target do projeto, esta pasta só é criada depois da primeira execução.
 
 ```
- Arquivo: [caminho da sua maquina]e2e-automation-practice-front-end\target\generated-report/index.html
+ Report HTML: [caminho da sua maquina]e2e-automation-practice-front-end\target\generated-report/index.html
  Json Cucumber: [caminho da sua maquina]e2e-automation-practice-front-end\target\json-cucumber-reports\cukejson.json
  Xml TestNG: [caminho da sua maquina]e2e-automation-practice-front-end\target\testng-cucumber-reports\cuketestng.xml
 ```
