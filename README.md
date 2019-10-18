@@ -9,7 +9,7 @@ Projeto desenvolvido como uma avaliação.
 
 ## PRÉ-REQUISITOS
 
-Descreva os requisitos de software e hardware que é necessário para executar este projeto de automação
+Requisitos de software e hardware necessários para executar este projeto de automação
 
 *   Java 1.8 SDK
 *   Maven 3.5.*
