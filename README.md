@@ -42,6 +42,6 @@ Veja o resultado do teste no console, com as informações e localização dos a
 
 [![Watch the video](automation-video.jpg)](https://youtu.be/LcBMJyLSWbo)
 
-## AUTORES
+## AUTOR
 
 * **Rubens Lobo**
