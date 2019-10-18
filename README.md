@@ -15,7 +15,18 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 *   Maven 3.5.*
 *   Chrome qualquer versão
 
+## CLONE O PROJETO PARA SUA MÁQUINA LOCAL
+
+Abra o git bash, entre no diretório escolhido na sua máquina e faça o download do projeto com o comando abaixo.
+
+```
+git clone https://github.com/rubens1287/e2e-automation-practice-front-end.git
+```
+
+
 ## COMANDO PARA EXECUTAR OS TESTES
+
+Dentro da pasta do projeto, onde esta localizado o arquivo pom.xml, execute o comando abaixo para rodar os testes automatizados.
 
 ```
 mvn verify
