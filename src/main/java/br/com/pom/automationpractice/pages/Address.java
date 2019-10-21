@@ -14,7 +14,7 @@ public class Address extends DriverManager implements Constantes {
      * Valida se a pagina de Endereço foi apresentada
      */
     public void validaTelaLogin(){
-        Verifications.verifyElementIsClickable(getBrowser(),btnProceedToCheckout,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),btnProceedToCheckout, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
     }
 

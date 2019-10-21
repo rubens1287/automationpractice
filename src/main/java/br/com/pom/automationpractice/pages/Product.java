@@ -13,19 +13,17 @@ public class Product extends DriverManager implements Constantes {
     private By btnAddToCart = By.id("add_to_cart");
     private By btnProceedToCheckout = By.xpath("//a[@title='Proceed to checkout']");
     private By lblAddSucessoCarrinho = By.xpath("//div[contains(@class,'layer_cart_product')]//h2[1]");
-    private By iFrameProduto = By.className("fancybox-iframe");
 
     /**
      * Adiciona produto no carrinho
      */
     public void adicionaNoCarrinho(){
-        FrameActions.switchToFrame(getBrowser(),iFrameProduto,timeOut);
-        Verifications.verifyElementIsClickable(getBrowser(),btnAddToCart,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),btnAddToCart, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
         getBrowser().findElement(btnAddToCart).click();
-        Verifications.verifyElementIsClickable(getBrowser(),lblAddSucessoCarrinho,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),lblAddSucessoCarrinho, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
-        Action.clickOnElement(getBrowser(),btnProceedToCheckout,timeOut);
+        Action.clickOnElement(getBrowser(),btnProceedToCheckout, TIME_OUT);
 
     }
 }

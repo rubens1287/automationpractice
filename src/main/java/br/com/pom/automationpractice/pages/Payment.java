@@ -24,7 +24,7 @@ public class Payment extends DriverManager implements Constantes {
      * Calcula valor total da compra conforme apresentado na tabela de valores
      */
     public void validarTotalPagamento(){
-        Verifications.verifyElementExists(getBrowser(),btnPagametoBanco,timeOut);
+        Verifications.verifyElementExists(getBrowser(),btnPagametoBanco, TIME_OUT);
         List<WebElement> valores = getBrowser().findElements(lblValorProdutosTabela);
         double somaValorCompra = 0;
         for (int i = 0; i < valores.size(); i++) {
@@ -49,7 +49,7 @@ public class Payment extends DriverManager implements Constantes {
                 String resposta = row.get(campo);
                 switch (campo.toUpperCase()){
                     case "METODO_PAGAMENTO":
-                        Action.clickOnElement(getBrowser(),By.xpath("//a[@title='"+resposta+"']"),timeOut);
+                        Action.clickOnElement(getBrowser(),By.xpath("//a[@title='"+resposta+"']"), TIME_OUT);
                         break;
                     default:
                         Assert.fail("Coluna não encontrada!");
@@ -62,16 +62,16 @@ public class Payment extends DriverManager implements Constantes {
      * Tira print e Clica no botão confirma oderm
      */
     public void confirmarOdermPagamento(){
-        Verifications.verifyElementIsClickable(getBrowser(),btnConfirmaOrdem,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),btnConfirmaOrdem, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
-        Action.clickOnElement(getBrowser(),btnConfirmaOrdem,timeOut);
+        Action.clickOnElement(getBrowser(),btnConfirmaOrdem, TIME_OUT);
     }
 
     /**
      * Valida mensagem de sucesso para ordem de compra
      */
     public void validarCompraComSucesso(){
-        Verifications.verifyTextsElementClickable(getBrowser(),lblCompraSucesso,"Your order on My Store is complete",timeOut);
+        Verifications.verifyTextsElementClickable(getBrowser(),lblCompraSucesso,"Your order on My Store is complete", TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
     }
 }

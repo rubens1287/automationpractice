@@ -7,6 +7,7 @@ import br.com.core.view.Action;
 import br.com.pom.automationpractice.constantes.Constantes;
 import io.cucumber.datatable.DataTable;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class Index extends DriverManager implements Constantes {
      *  Valida se a tela index/inicial foi apresentada
      */
     public void validaTelaIncial(){
-        Verifications.verifyElementIsClickable(getBrowser(),txtSearch,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),txtSearch, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
     }
 
@@ -39,7 +40,8 @@ public class Index extends DriverManager implements Constantes {
                 String resposta = row.get(campo);
                 switch (campo.toUpperCase()){
                     case "PRODUTO":
-                        Action.clickOnElement(getBrowser(),By.xpath("//div[@class='product-container']//a[@title='"+resposta.trim()+"']"),timeOut);
+                        getBrowser().findElement(By.xpath("//div[@class='product-container']//a[@class='product-name' and @title='"
+                                +resposta.trim()+"']")).click();
                         break;
                     default:
                         Assert.fail("Coluna não encontrada!");

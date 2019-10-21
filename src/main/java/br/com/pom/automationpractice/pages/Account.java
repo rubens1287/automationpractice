@@ -3,15 +3,9 @@ package br.com.pom.automationpractice.pages;
 import br.com.core.asserts.Verifications;
 import br.com.core.report.ExtentReports;
 import br.com.core.setup.DriverManager;
-import br.com.core.view.Action;
-import br.com.core.view.ComboBoxActions;
 import br.com.pom.automationpractice.constantes.Constantes;
 import br.com.pom.automationpractice.model.DadosCliente;
-import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-
-import java.util.Locale;
 
 public class Account extends DriverManager implements Constantes {
 
@@ -33,7 +27,7 @@ public class Account extends DriverManager implements Constantes {
      * Valida se a tela de cadastro esta sendo apresentada
      */
     public void validaTelaCadastroCliente(){
-        Verifications.verifyElementIsClickable(getBrowser(),txtPrimeiroNome,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),txtPrimeiroNome, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
     }
 

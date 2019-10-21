@@ -17,7 +17,7 @@ public class Order extends DriverManager implements Constantes {
      *
      */
     public void executaOrdemCompra(){
-        Verifications.verifyElementExists(getBrowser(),btnProceedToCheckout,timeOut);
+        Verifications.verifyElementExists(getBrowser(),btnProceedToCheckout, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
         getBrowser().findElement(btnProceedToCheckout).click();
     }
@@ -26,7 +26,7 @@ public class Order extends DriverManager implements Constantes {
      *  Valida, tira print e confirma Termo de serviço
      */
     public void confirmarTermoDoServico(){
-        Verifications.verifyElementExists(getBrowser(),ckbAgreeTerms,timeOut);
+        Verifications.verifyElementExists(getBrowser(),ckbAgreeTerms, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
         getBrowser().findElement(ckbAgreeTerms).click();
     }

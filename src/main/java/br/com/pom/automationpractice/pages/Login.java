@@ -23,7 +23,7 @@ public class Login extends DriverManager implements Constantes {
      * Valida se a pagina de login foi apresentada
      */
     public void validaTelaLogin(){
-        Verifications.verifyElementIsClickable(getBrowser(),txtEmail,timeOut);
+        Verifications.verifyElementIsClickable(getBrowser(),txtEmail, TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
     }
 
@@ -31,7 +31,7 @@ public class Login extends DriverManager implements Constantes {
      * Cria conta via pagina de login
      */
     public void criaConta(){
-        Action.setText(getBrowser(),txtEmail,unaccent(faker.name().username())+"@gmail.com",timeOut);
+        Action.setText(getBrowser(),txtEmail,unaccent(faker.name().username())+"@gmail.com", TIME_OUT);
         ExtentReports.appendToReport(getBrowser());
         getBrowser().findElement(btnCriarConta).click();
     }
