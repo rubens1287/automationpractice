@@ -16,9 +16,7 @@ public class Hook extends ExtentReports implements Constantes {
         testScenario.set(scenario);
         AppWeb appWeb = new AppWeb();
         appWeb.setTestName(testScenario.get().getName());
-        appWeb.setBrowserName("chrome");
         appWeb.setUpDriver(appWeb);
-        getBrowser().get(URL);
     }
 
     @After
